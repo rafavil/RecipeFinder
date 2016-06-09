@@ -60,6 +60,18 @@ body {
 	font-family: Lato, Arial, Helvetica, sans-serif;
 }
 
+h1, h2, nav {
+	font-family: ChelseaMarket, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #810430;
+}
+
+.center-global {
+	width: 1020px;
+	margin: 0 auto;
+}
+
 /*Header*/
 body > header {
 	box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
@@ -92,6 +104,11 @@ nav {
 			display: inline-block;
 			*display: inline; /*for IE7*/
 			margin-right: 30px;
+			font-size: 20px;
+		}
+
+		nav ul li:last-child {
+			margin-right: 0;
 		}
 
 	nav a {
@@ -100,8 +117,7 @@ nav {
 
 /*Main Section*/
 .main {
-	width: 1020px;
-	margin: 0 auto;	
+	padding-bottom: 33px;	
 }
 
 .latest {
@@ -124,6 +140,26 @@ nav {
 		box-shadow: rgba(0, 0, 0, .25) 2px 2px 2px 0;
 	}
 
+	.media h2 {
+		color: #49301a;
+		font-family: LatoBold, Arial, Helvetica, sans-serif;
+		font-weight: normal;
+		font-size: 22px;
+		margin-bottom: 5px;
+	}
+
+	.media p {
+		margin: 0;
+		font-family: Lato, Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		color: #7b6047;
+		text-transform: uppercase;
+	}
+
+		.media p span {
+			font-size: 21px;
+		}
+
 .promo {
 	width: 1020px;
 	margin: 0 auto;
@@ -138,6 +174,11 @@ nav {
 		bottom: 93px;
 		right: 75px;
 		width: 316px;
+		text-align: center;
+	}
+
+	.promo-desc h1 {
+		color: #fefefe;
 	}
 
 	.promo-btn {
@@ -146,6 +187,8 @@ nav {
 		padding: 13px 0;
 		background-color: #6c0733;
 		box-shadow: rgba(0, 0, 0, .25) 0 7px 2px 0;
+		font-size: 20px;
+		color: #fefefe;
 	}
 
 .more-btn {
@@ -169,7 +212,8 @@ a {
 .tweet {
 	padding-left: 55px;
 	padding-right: 20px;
-	position: relative;	
+	position: relative;
+	line-height: 1.4;	
 }
 
 .tweet:before {
@@ -186,6 +230,9 @@ a {
 
 .tweet .date {
 	color: #8f7e6d;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	font-style: italic;
 }
 
 .rating {
@@ -193,13 +240,21 @@ a {
 	clear: left;
 	padding: 4px 15px 0 0;
 	width: 45px;
+	color: #810430;
+	font-size: 13px;
 }
 
 .pop-item {
 	padding-bottom: 20px;
 	float: left;
 	width: 250px;
+	text-transform: uppercase;
+	font-size: 18px;
 }
+	
+	.pop-item a {
+		color: #544a40;		
+	}
 
 .popular {
 	padding-bottom: 40px;
@@ -208,7 +263,15 @@ a {
 /*Footer*/
 footer {
 	background-color: rgb(66, 3, 30);
+	padding-top: 10px;
+	padding-bottom: 50px;
 }
+
+	footer ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
 
 .footer-inside {
 	width: 1020px;
@@ -216,22 +279,51 @@ footer {
 	padding-left: 40px;
 }
 
-.center-global {
-	width: 1020px;
-	margin: 0 auto;
-}
-
 .footer-1 {
 	float: left;
 	width: 422px;
 }
 
+	.footer-1 h2 {
+		font-size: 36px;
+	}
+
+	.footer-1 li {
+		float: left;
+		width: 195px;
+	}
+
 .footer-2 {
 	float: left;
 	width: 326px;
+	padding-top: 22px;
 }
+
+	.footer-2 ul {
+		margin: 0 80px 0 0;
+	}
 
 .footer-3 {
 	float: left;
 	width: 232px;
+	color: #801c48;
+	padding-top: 22px;
 }
+
+	.footer-3 h2, .footer-3 a {
+		color: #801c48;
+	}
+
+	.footer-3 li {
+		line-height: 1.7;
+	}
+	
+	.footer-1 ul, .footer-2 ul {
+		text-align: center;
+		font-size: 20px;
+		line-height: 1.7;
+	}
+
+	.footer-1 ul a, .footer-2 ul a {
+		color: #ab97a0;
+	}
