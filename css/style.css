@@ -23,7 +23,7 @@
 
 @font-face {
 	font-family: 'Lato';
-	src: url(../fonts/lato-regular-webfont.eot);
+	src: url('../fonts/lato-regular-webfont.eot');
 	src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
 	     url('../fonts/lato-regular-webfont.woff') format('woff'),
 	     url('../fonts/lato-regular-webfont.ttf') format('truetype'),
@@ -65,7 +65,7 @@ body > header {
 	box-shadow: rgba(0, 0, 0, .25) 0 3px 2px 0;
 	position: relative;
 	z-index: 10;
-	/*background-color: rgb(66, 3, 30);*/ 
+	/*background-color: rgb(66, 3, 30);*/
 }
 
 .logo {
